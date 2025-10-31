@@ -1,7 +1,7 @@
 function formatMessage(message, maxLength) {
     let condition = message.length > maxLength;
     if (condition) {
-        let slicedMessage = message.slice(0, -maxLength) + "...";
+        let slicedMessage = message.slice(0, maxLength) + "...";
         return slicedMessage
     }
     else {
